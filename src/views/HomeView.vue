@@ -36,7 +36,7 @@
           lg:row-start-1
           lg:row-end-2
         "
-        src="..\src\assets\images\illustration-working.svg"
+        :src="bg"
         alt="bg"
       />
       <div
@@ -100,6 +100,10 @@
 
 export default {
   name: "HomeView",
+  data:()=>({
+    bg: [require("@/assets/images/illustration-working.svg")]
+
+  }),
   components: {},
 };
 </script>
